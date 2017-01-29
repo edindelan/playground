@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
 
+const urlForUser = username =>
+   `https://api.github.com/users/${username}`;
+
 class GitHub extends Component {
     state = {
         requestFailed: false
     };
 
     callApi = () => {
-        fetch('https://api.github.com/users/edindelan')
+        const {username} = this.props;
+        fetch(urlForUser(username))
             .then(response => {
                 console.log(response);
                 if (!response.ok) {
