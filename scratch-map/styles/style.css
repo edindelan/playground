@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body {
+    /*background-color: #0e0e0e;*/
+    font-family: sans-serif;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0e0e+0,0e0e0e+29,191817+44,0e0e0e+60,0e0e0e+100 */
+    background: #0e0e0e; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #0e0e0e 0%, #0e0e0e 29%, #191817 44%, #0e0e0e 60%, #0e0e0e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #0e0e0e 0%,#0e0e0e 29%,#191817 44%,#0e0e0e 60%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #0e0e0e 0%,#0e0e0e 29%,#191817 44%,#0e0e0e 60%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#map {
+    text-align: center;
+    margin-top: 40px;
+    padding: 5px 60px;
+    padding-bottom: 60px;
+}
+
+
+#map .country {
+    /*width: 180px;*/
+    width: calc(10% - 10px);
+    height: 70px;
+    display: inline-block;
+    background-color: #151414;
+    margin: 5px;
+    position: relative;
+    text-align: left;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+    #map .country {
+        width: calc(15% - 10px);
+    }
+    #map {
+        padding: 5px 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    #map .country {
+        width: calc(20% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    #map .country {
+        width: calc(33% - 10px);
+    }
+
+    #map {
+        padding: 5px 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    #map .country {
+        width: calc(50% - 10px);
+    }
+
+    #map {
+        padding: 5px 20px;
+    }
+}
+
+#map .country img{
+    display: none !important;
+}
+
+#map .country.Spain {
+    background-image: url('../images/country1.png');
+    color: #fcf690;
+}
+
+#map .country.Germany {
+    background-image: url('../images/country2.png');
+    color: #fcae63;
+}
+
+#map .country.Thailand {
+    background-image: url('../images/country3.png');
+    color: #ec5f6f;
+}
+
+#map .country.Italy {
+    background-image: url('../images/country4.png');
+    color: #fca0ca;
+}
+
+#map .country.Maroco {
+    background-image: url('../images/country5.png');
+    color: #59c8f6;
+}
+#map .country.Australia {
+    background-image: url('../images/country6.png');
+    color: #bfd76c;
+}
+
+#map .country .country-name{
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+    font-size: 12px;
+}
+
+#map .country .country-name-1{
+    color: #252424;
+    z-index: 2;
+ }
+
+#map .country .country-name-2{
+
+}
+
+.heading {
+    color: #ccc;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Expletus Sans', cursive;
+    font-size: 38px;
+    font-weight: 100;
+}
+
+.heading .char {
+ letter-spacing: -10px;
+}
+
+.heading .space {
+    margin: 0 8px;
+}
+
+.heading .color1 {
+    color: #fcf690;
+}
+
+.heading .color2 {
+    color: #fcae63;
+}
+
+.heading .color3 {
+    color: #ec5f6f;
+}
+
+.heading .color4 {
+    color: #fca0ca;
+}
+
+.heading .color5 {
+    color: #C68FCB;
+}
+
+.heading .color6 {
+    color: #A28CC6;
+}
+
+.heading .color7 {
+     color: #59c8f6;
+ }
+
+.heading .color8 {
+    color: #26BEA6;
+}
+
+.heading .color9 {
+    color: #bfd76c;
+}
